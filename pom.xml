@@ -115,8 +115,19 @@
     <origin.groupId>unknown</origin.groupId>
     <origin.artifactId>unknown</origin.artifactId>
     <origin.version>${project.version}</origin.version>
-    <graalvm.version>25.0.1</graalvm.version>
+    <graalvm.version>25.1.0-dev-20260508_0206</graalvm.version>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>graalvm-ce-dev-builds</id>
+      <name>GraalVM CE Dev Builds</name>
+      <url>https://raw.githubusercontent.com/graalvm/graalvm-ce-dev-builds/master/maven/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <build>
     <pluginManagement>
